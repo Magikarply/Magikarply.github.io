@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Braeden Soutar - About Me</title>
+    <link href="stylesheet.css" rel="stylesheet">
 
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -56,40 +56,10 @@
         <p class="lead mb-4">
             Developer 
         </p>
-        <a href="#about" class="btn btn-primary btn-lg px-4 me-2">Learn More</a>
         <a href="https://www.linkedin.com/in/braeden-soutar-6665612b8/" 
            class="btn btn-outline-light btn-lg px-4">LinkedIn</a>
     </div>
 </section>
-
-<!-- Hero Styles -->
-<style>
-    .hero {
-        height: 75vh;
-        background: linear-gradient(
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)
-        ), 
-        url("20240821_150317.jpg")
-        center/cover no-repeat;
-        padding: 60px 0;
-    }
-
-    @media (max-width: 768px) {
-        .hero {
-            height: 60vh;
-        }
-
-        .hero h1 {
-            font-size: 2.2rem;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-        }
-    }
-</style>
-
     <!-- Offcanvas Sidebar -->
 <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="demo">
     <div class="offcanvas-header justify-content-center">
@@ -114,16 +84,24 @@
 
         <div class="text-center mb-4">
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-                Open Menu
+                Sections
             </button>
         </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <div class="section-card">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Hello! My name is Braeden Soutar, and I am a passionate developer with a deep interest in web development and programming. This website showcases my projects, skills, and career journey.</p>
+        <div class="container section-card">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="Profile.jpg" alt="Braeden Soutar" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h2>Who am I?</h2>
+                    <p>Hello! My name is Braeden Soutar, and I am a developer with experience in front-end and back-end Devlopment. I enjoy using my knowledge to create projects of my own, while constantly improving my skills and exploring new tools and frameworks.</p>
+                </div>
+            </div>
+            
         </div>
 
         <div class="section-card">
@@ -134,18 +112,68 @@
         <div class="section-card">
             <h3>My Skills</h3>
             <ul>
-                <li>Web Development (HTML, CSS, JavaScript)</li>
-                <li>Libraies (Bootstrap, React)</li>
-                <li>Backend Development (PHP, Node.js)</li>
-                <li>Database Management (SQL)</li>
-                <li>Version Control (Git & GitHub)</li>
+                <li>Collaboration</li>
+                <li>Organization</li>
+                <li>Leadership</li>
             </ul>
+            <h4>Programming Languages & Frameworks</h4>
+            <p>Beginner - Intermediate - Advanced - Expert</p>
+            <table class="table table-dark table-striped">
+                <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Ability</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>HTML & CSS</td>
+                    <td>Expert</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>Intermediate</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-
         <div class="section-card">
             <h3>Contact Me</h3>
-            <p>If you'd like to collaborate or get in touch, feel free to visit my Contact page.</p>
+            <p>Email: Bsoutar05@gmail.com</p>
+
+
         </div>
+        <div  id="Education" class="section-card">
+            <h3>Education</h3>
+            <p>High School Diploma (2023)</p>
+            <p>Digital Exploration Opportunities Program (DEOP) - 2023 </p>
+
+        </div>
+
     </main>
 
 </body>
